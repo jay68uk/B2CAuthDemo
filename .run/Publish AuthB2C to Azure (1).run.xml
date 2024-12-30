@@ -1,0 +1,17 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Publish AuthB2C to Azure (1)" type="AzureWebAppDeploy">
+    <option name="appServicePlanName" value="ASP-b2cpocapp-8809" />
+    <option name="appServicePlanResourceGroupName" value="b2c-poc-app" />
+    <option name="operatingSystem" value="Linux" />
+    <option name="pricingSize" value="F1" />
+    <option name="pricingTier" value="Free" />
+    <option name="projectConfiguration" value="Release" />
+    <option name="projectPlatform" value="Any CPU" />
+    <option name="publishableProjectPath" value="$PROJECT_DIR$/AuthB2C.App/AuthB2C.App.csproj" />
+    <option name="region" value="uksouth" />
+    <option name="resourceGroupName" value="b2c-poc-app" />
+    <option name="subscriptionId" value="8b8ebdf9-64c5-420d-b9d4-781fb2f6072b" />
+    <option name="webAppName" value="b2c-poc-web-app" />
+    <method v="2" />
+  </configuration>
+</component>

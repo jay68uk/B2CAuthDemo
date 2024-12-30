@@ -1,0 +1,6 @@
+﻿services:
+  authb2c.app:
+    image: authb2c.app
+    build:
+      context: .
+      dockerfile: AuthB2C.App/Dockerfile

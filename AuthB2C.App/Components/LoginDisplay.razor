@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.IdentityModel.Logging
+<AuthorizeView>
+    <Authorized>
+        <a href="MicrosoftIdentity/Account/EditProfile">
+            Hello @context.User.Claims.FirstOrDefault(
+                           c => c.Type.Contains("givenname"))?.Value
+        </a>
+        <a href="MicrosoftIdentity/Account/SignOut">Log Out</a>
+        <a href="MicrosoftIdentity/Account/SignOut">Reset Password</a>
+    </Authorized>
+    <NotAuthorized>
+        <a href="MicrosoftIdentity/Account/SignIn">Log In</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+
+}
