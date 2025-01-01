@@ -21,6 +21,7 @@ steps:
     azureSubscription: 'JayBasicSubscription(8b8ebdf9-64c5-420d-b9d4-781fb2f6072b)'
     command: 'publish'
     publishWebProjects: true
+    arguments: '--output $(Build.ArtifactStagingDirectory)'
     
 - task: PublishBuildArtifacts@1
   inputs:
